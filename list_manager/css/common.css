@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	font-weight: normal;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+input,
+button{
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+}
+
+div,
+li{
+	box-sizing: border-box;
+}
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}

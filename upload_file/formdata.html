@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+  	<input type="text" id="username" value="张三" />
+  	<input type="text" id="password" value="123" />
+  	<input type="submit" id="submitBtn" value="提交" />
+
+  	<script type="text/javascript">
+  		var oUsername = document.getElementById('username'),
+  		    oPassword = document.getElementById('password'),
+  		    oSubmitBtn = document.getElementById('submitBtn'),
+  		    fd = new FormData();
+
+  		oSubmitBtn.onclick = function(){
+  			fd.append('Username', oUsername.value);
+  			fd.append('Password', oPassword.value);
+
+  			console.log('username:' + fd.get('Username'));
+  			console.log('password:' + fd.get('Password'));
+
+  			fd.set('Username', '李四');
+  			console.log('username:' + fd.get('Username'));
+
+  			console.log(fd.has('Password'));
+
+  			fd.delete('Password');
+  			console.log('password:' + fd.get('Password'));
+  		}
+  	</script>
+</body>
+</html>

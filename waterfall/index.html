@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片瀑布流</title>
+	<link rel="stylesheet" href="css/waterfall.css" />
+</head>
+<body>
+	<div class="wrapper js_waterfall">
+		
+	</div>
+
+	<script src="js/utils.js"></script>
+	<script src="js/waterfall.js"></script>
+	<script type="text/javascript">
+      new Waterfall({
+      	el: 'js_waterfall',
+      	imgApi: 'server/index.php',
+        column: 3,
+        gap: 10
+      }).init();
+	</script>
+</body>
+</html>

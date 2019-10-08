@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Upload file</title>
+</head>
+<body>
+
+	<form action="server/m_upload.php" method="post" enctype="multipart/form-data">
+		<input type="text" name="filename" /><br />
+		<input type="file" name="file[]" /><br />
+		<input type="file" name="file[]" /><br />
+		<input type="file" name="file[]" /><br />
+		<input type="file" name="file[]" /><br />
+		<input type="submit" value="上传" />
+	</form>
+
+	<!-- 
+		文件 -> 文件 
+    数据 -> 字符串
+
+       键值对化   POST
+
+    二进制
+
+    <input type="text" name="username" />
+    <input type="password" name="password">
+
+    username=123&password=13579
+
+    multipart/form-data
+	-->
+</body>
+</html>
