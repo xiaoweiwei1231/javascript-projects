@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{width: 100%;}
+h4{font-weight: normal;}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.course-wrap{
+    width: 1200px;
+    margin: 100px auto;
+}
+.course-tab{
+    height: 52px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #efefef;
+    background-color: #f5f5f5;
+}
+.course-tab .tab-item{
+    float: left;
+    height: 50px;
+    margin-right: 40px;
+    line-height: 50px;
+}
+.course-tab .course-tab-lk{
+    font-size: 14px;
+}
+.course-tab .course-tab-lk.current{
+    color:#167ed9;
+}
+.course-card-list-wrap{
+    width: 1200px;
+    height: 500px;
+    /* border: 1px solid red; */
+}
+.course-card-list-wrap .course-card-list{
+    width: 1225px;
+    height: 500px;
+    /* border: 1px solid green; */
+    margin-left: -15px;
+}
+.course-card-list-wrap .course-card-list .course-list-tip{
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    font-size: 30px;
+    color: #999;
+}
+.course-card-list-wrap .card-item{
+    border: 1px solid transparent;
+    float: left;
+    width: 236px;
+    height: 221px;
+    margin: 0 0 20px 9px;
+    padding:7px 7px 10px 7px;
+}
+/* 本来就有了一个透明的边框 */
+.course-card-list-wrap .card-item:hover{
+    border: 1px solid #000;
+    box-shadow: 1px 1px 2px 1px #ccc;
+}
+.couese-card-list-wrap .card-item .img-lk{
+    display: block;
+    width: 220px;
+    height: 124px;
+    margin-bottom: 6px;
+}
+.couese-card-list-wrap .card-item .item-status{
+    position: relative;
+    z-index: 1;
+    height: 24px;
+    margin-top: -30px;
+    background-color: rgba(0,0,0,.5);
+    line-height: 24px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
